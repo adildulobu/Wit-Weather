@@ -2,9 +2,8 @@ import styled from "styled-components"
 
 
 export const FooterContainer = styled.div`
-    background:#1F1F1F;
     width:100%;
-    text-align:center;
+    height:370px;
 `
 
 export const FooterText = styled.span`
@@ -14,5 +13,8 @@ export const FooterText = styled.span`
     padding:20px;
     color:#FFF;
     font-weight:600;
+    background:#1F1F1F;
+    width:100%;
+    height:60px;
 `
 
