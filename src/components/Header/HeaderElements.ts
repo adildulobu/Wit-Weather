@@ -27,5 +27,12 @@ export const HeaderTitle = styled.span`
 `
 
 export const HeaderButton = styled.span`
+    display:flex;
+    align-items:center;
     color:#FFF;
+`
+export const HeaderButtonLabel = styled.span`
+    font-size:19px;
+    font-weight:500;
+    margin-left:3px;
 `

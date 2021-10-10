@@ -1,10 +1,22 @@
-import React from "react";
+import React,{useState} from "react";
 
 import { FaSun } from 'react-icons/fa';
-import {HeaderContainer,HeaderLogo, HeaderButton,HeaderIcon,HeaderTitle} from './HeaderElements'
+import {HeaderContainer,HeaderLogo, HeaderButton,HeaderIcon,HeaderTitle,HeaderButtonLabel} from './HeaderElements'
+
+import Switch from "react-switch";
+
 
 
 function Header(){
+    
+  const [checked, setChecked] = useState(false);
+  const handleChange = (nextChecked: any) => {
+    setChecked(nextChecked);
+    console.log(nextChecked)
+  };
+    
+   
+
     return(
         < HeaderContainer>
             <HeaderLogo>
@@ -16,7 +28,12 @@ function Header(){
                 </HeaderTitle>
             </HeaderLogo>
             <HeaderButton>
-                Button
+                <Switch checkedIcon={false} 
+                    uncheckedIcon={false}
+                    onColor="#FC9700"
+                    onChange={handleChange} checked={checked}
+                />
+                <HeaderButtonLabel>°F</HeaderButtonLabel>
             </HeaderButton>
         </HeaderContainer>
     )

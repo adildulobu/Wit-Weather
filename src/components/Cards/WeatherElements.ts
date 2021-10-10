@@ -38,3 +38,4 @@ export const WeatherItemDownMin = styled.span`
     color:rgba(0, 0, 0, 0.76);
     font-size:20px;
 `
+
