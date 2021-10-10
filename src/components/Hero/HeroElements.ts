@@ -9,7 +9,7 @@ export const HeroContainer = styled.div`
 `
 
 export const HeroContent = styled.div`
-    display:flex;
+    
 `
 export const Input = styled.input`
     border:none;
@@ -59,4 +59,18 @@ export const HeroBg = styled.div`
     display:flex;
     align-items:center;
     justify-content:center;
+`
+export const FormElement = styled.form`
+    display:flex;
+    flex-direction:column
+`
+export const InputSection = styled.div`
+    display:flex;
+`
+
+export const  ErrorSection = styled.div`
+    color: #FFF;
+    font-size: 12px;
+    line-height: 15px;
+    margin: 5px 0 0;
 `
